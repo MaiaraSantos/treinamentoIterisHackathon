@@ -1,0 +1,12 @@
+<h3>Add novo post</h3>
+<div class="divButton">
+  <input type="text" placeholder="Título" [(ngModel)]="title" />
+  <input type="text" placeholder="Imagem" [(ngModel)]="link" />
+  <textarea rows="5" placeholder="Descrição" [(ngModel)]="description"></textarea>
+  <button type="button" class="btn btn-primary" (click)="addPost()">Enviar</button>
+</div>
+<br>
+<hr>
+<h2>Lista de postagens:</h2>
+<app-blog-post *ngFor="let item of blogPosts" [post]="item"></app-blog-post>
+

@@ -1,0 +1,5 @@
+.divButton input, textarea, button {
+  margin-top: 15px;
+  display: block;
+  width: 35.5vw;
+}
